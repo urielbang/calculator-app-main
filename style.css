@@ -14,5 +14,72 @@ body {
 .container {
   width: 100%;
   height: 98vh;
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculater {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.headerCalc {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.displayCalc {
+  width: 100%;
+  height: 25%;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.calacNumbers {
+  width: 100%;
+  height: 55vh;
+  background-color: hsl(223, 31%, 20%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 20px;
+  justify-content: space-around;
+}
+.row1 {
+  display: flex;
+  justify-content: space-around;
+}
+.row2 {
+  display: flex;
+  justify-content: space-around;
+}
+.row3 {
+  display: flex;
+  justify-content: space-around;
+}
+.row4 {
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  width: 90px;
+  height: 47px;
+  font-family: "League Spartan", sans-serif;
+  border-radius: 10px;
+  border: none;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.673);
+  background-color: hsl(30, 25%, 89%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  cursor: pointer;
 }
