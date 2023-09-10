@@ -44,7 +44,7 @@ body {
   justify-content: space-around;
   overflow: hidden;
 }
-.calacNumbers {
+#calacNumbers {
   width: 100%;
   height: 55vh;
   background-color: hsl(223, 31%, 20%);
