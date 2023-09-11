@@ -44,5 +44,7 @@ document.getElementById("compareBtn").addEventListener("click", function () {
     tmpAnswer = eval(tmpAnswer);
     calcDisplay.innerText = tmpAnswer;
     tmpAnswer = "";
+  } else {
+    tmpAnswer = "wrong answer";
   }
 });
