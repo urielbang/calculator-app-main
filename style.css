@@ -101,3 +101,47 @@ button:hover {
   background-color: hsl(6, 63%, 50%);
   color: white;
 }
+@media screen and (max-width: 375px) {
+  .calculater {
+    width: 98%;
+    height: 98%;
+  }
+  button {
+    width: 11vw;
+    height: 11vh;
+    font-size: 20px;
+  }
+  #restBtn {
+    width: 20vw;
+    font-size: 20px;
+    height: 5vh;
+  }
+  #compareBtn {
+    width: 20vw;
+    font-size: 20px;
+    height: 5vh;
+  }
+  #delBtn {
+    width: 10vw;
+    font-size: 15px;
+    height: 10vh;
+  }
+  .attribution {
+    display: none;
+  }
+  #calacNumbers {
+    gap: 0;
+  }
+  .row1 {
+    justify-content: space-evenly;
+  }
+  .row2 {
+    justify-content: space-evenly;
+  }
+  .row3 {
+    justify-content: space-evenly;
+  }
+  .row4 {
+    justify-content: space-evenly;
+  }
+}
