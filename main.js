@@ -81,3 +81,64 @@ compareBtn.addEventListener("click", () => {
     calcDisplay.textContent = "wrong number";
   }
 });
+
+const inputs = document.querySelectorAll("input");
+const lables = document.querySelectorAll("label");
+
+console.log(inputs);
+inputs.forEach((element, index) => {
+  element.addEventListener("click", () => {
+    element.checked = true;
+    if (na.checked == true) {
+      document.body.style.backgroundColor = "hsl(0, 0%, 90%)";
+      document.querySelector("#displayCalc").style.backgroundColor =
+        " hsl(0, 0%, 93%)";
+      document.getElementById("calacNumbers").style.backgroundColor =
+        "hsl(0, 5%, 81%)";
+      document.querySelector(".switch-toggle").style.backgroundColor =
+        "hsl(0, 5%, 81%)";
+      lables[index].style.backgroundColor = "hsl(25, 98%, 40%)";
+      document.querySelector("#compareBtn").style.backgroundColor =
+        "hsl(25, 98%, 40%)";
+      document.querySelector("#delBtn").style.backgroundColor =
+        "hsl(185, 42%, 37%)";
+      document.querySelector("#restBtn").style.backgroundColor =
+        "hsl(185, 42%, 37%)";
+      document.querySelector(".toggleAndTXt").style.color = "black";
+      for (let i = 0; i < lables.length; i++) {
+        lables[i].style.color = "black";
+      }
+      document.querySelector("#calc").style.color = "black";
+    } else if (off.checked == true) {
+      document.body.style.backgroundColor = "hsl(268, 75%, 9%)";
+      document.querySelector("#displayCalc").style.backgroundColor =
+        "hsl(268, 71%, 12%)";
+      document.getElementById("calacNumbers").style.backgroundColor =
+        "hsl(268, 71%, 12%)";
+      document.querySelector(".switch-toggle").style.backgroundColor =
+        "hsl(268, 71%, 12%)";
+      for (let i = 0; i < collectionButtons.length; i++) {
+        collectionButtons[i].style.backgroundColor = "hsl(268, 71%, 12%)";
+        collectionButtons[i].style.color = "hsl(52, 100%, 62%)";
+      }
+      lables[index].style.backgroundColor = "hsl(177, 92%, 70%)";
+      document.querySelector("#compareBtn").style.backgroundColor =
+        "hsl(290, 70%, 36%)";
+      document.querySelector("#delBtn").style.backgroundColor =
+        "hsl(281, 89%, 26%)";
+      document.querySelector("#compareBtn").style.backgroundColor =
+        "hsl(185, 42%, 37%)";
+      document.querySelector("#restBtn").style.color = "white";
+      document.querySelector("#restBtn").style.backgroundColor =
+        "hsl(281, 89%, 26%)";
+      document.querySelector(".toggleAndTXt").style.color =
+        "hsl(52, 100%, 62%)";
+      for (let i = 0; i < lables.length; i++) {
+        lables[i].style.color = "hsl(52, 100%, 62%)";
+      }
+      document.querySelector("#calc").style.color = "hsl(52, 100%, 62%)";
+    } else {
+      location.reload();
+    }
+  });
+});

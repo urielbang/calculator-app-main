@@ -145,3 +145,27 @@ button:hover {
     justify-content: space-evenly;
   }
 }
+.switch-toggle {
+  float: left;
+  background: #242729;
+  border-radius: 10px;
+}
+.switch-toggle input {
+  position: absolute;
+  opacity: 0;
+}
+.switch-toggle input + label {
+  padding: 7px;
+  float: left;
+  color: #fff;
+  cursor: pointer;
+}
+.switch-toggle input:checked + label {
+  background: hsl(6, 63%, 50%);
+  border-radius: 100%;
+}
+.toggleAndTXt {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
