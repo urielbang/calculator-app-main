@@ -90,9 +90,13 @@ inputs.forEach((element, index) => {
   element.addEventListener("click", () => {
     element.checked = true;
     if (na.checked == true) {
+      // #242729
+      lables[0].style.backgroundColor = "hsl(0, 5%, 81%)";
+      lables[2].style.backgroundColor = "hsl(0, 5%, 81%)";
       document.body.style.backgroundColor = "hsl(0, 0%, 90%)";
       document.querySelector("#displayCalc").style.backgroundColor =
         " hsl(0, 0%, 93%)";
+      document.querySelector("#displayCalc").style.color = "black";
       document.getElementById("calacNumbers").style.backgroundColor =
         "hsl(0, 5%, 81%)";
       document.querySelector(".switch-toggle").style.backgroundColor =
@@ -110,6 +114,8 @@ inputs.forEach((element, index) => {
       }
       document.querySelector("#calc").style.color = "black";
     } else if (off.checked == true) {
+      lables[0].style.backgroundColor = "hsl(268, 71%, 12%)";
+      lables[1].style.backgroundColor = "hsl(268, 71%, 12%)";
       document.body.style.backgroundColor = "hsl(268, 75%, 9%)";
       document.querySelector("#displayCalc").style.backgroundColor =
         "hsl(268, 71%, 12%)";
